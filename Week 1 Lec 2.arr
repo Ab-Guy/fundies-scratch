@@ -43,6 +43,6 @@ triangle(50, "outline", "red" )
 
 #composition
 #overlay((first figure)), (second figure)
-overlay(circle)(30,"solid", "blue"),
-rectnagle(80, 60, "solid", "yellow")
+overlay(circle(30,"solid", "blue"),
+  rectangle(80, 60, "solid", "yellow"))
   
