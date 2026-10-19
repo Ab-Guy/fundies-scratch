@@ -19,3 +19,8 @@ use context dci2024
 
 #Task 2 
 # Column names match the header of flights 
+flights_53 = load-table: rownames, dep_time, sched_dep_time, dep_delay,
+  arr_time, sched_arr_time, arr_delay, carrier, flight, tailnum, origin, dest,
+  air_time, distance, hour, minute, time_hour
+  source: csv-table-file("flights_sample53.csv", default-options)
+    
