@@ -42,9 +42,10 @@ end
 
 long-flights = filter-with(flights, is_long_flight)
 
-by-air-time = order-by(long-flights, "air time", false)
+by-air-time = order-by(long-flights, "air_time", false)
 
 top-row = by-air-time.row-n(0)
-top-carrier = top-row ["carrier"]
-top-origin = top-row ["origin"]
+top-carrier = top-row["carrier"]
+top-origin = top-row["origin"]
 top-dest = top-row["dest"]
+
